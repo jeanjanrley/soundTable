@@ -1,10 +1,11 @@
 import React from "react";
-import { View } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Home } from "./src/screens/Home";
 
 export default function App() {
 	return (
-		<View>
-
-		</View>
+		<SafeAreaProvider>
+			<Home />
+		</SafeAreaProvider>
 	);
 }

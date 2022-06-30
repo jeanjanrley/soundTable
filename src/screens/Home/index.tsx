@@ -1,10 +1,27 @@
 import React from "react";
-import { View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, Text } from "react-native";
+import { ButtonPlayer } from "../../components/buttonPlayer";
 
 export function Home() {
 	return (
-		<View>
-
-		</View>
+		<SafeAreaView style={styles.page}>
+			<ButtonPlayer />
+			<ButtonPlayer />
+			<ButtonPlayer />
+			<ButtonPlayer />
+			<ButtonPlayer />
+			<ButtonPlayer />
+		</SafeAreaView>
 	);
 }
+
+const styles = StyleSheet.create({
+	page: {
+		display: "flex",
+		flexDirection: "row",
+		flexWrap: "wrap",
+		padding: 10,
+		justifyContent: "space-between"
+	}
+});
