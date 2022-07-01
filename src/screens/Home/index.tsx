@@ -6,12 +6,8 @@ import { ButtonPlayer } from "../../components/buttonPlayer";
 export function Home() {
 	return (
 		<SafeAreaView style={styles.page}>
-			<ButtonPlayer />
-			<ButtonPlayer />
-			<ButtonPlayer />
-			<ButtonPlayer />
-			<ButtonPlayer />
-			<ButtonPlayer />
+			<ButtonPlayer
+			/>
 		</SafeAreaView>
 	);
 }
